@@ -1,2 +1,1 @@
 # fried
-installed minimal fedora ?
