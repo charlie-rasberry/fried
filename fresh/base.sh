@@ -21,6 +21,9 @@ sudo dnf -y install git\
 	7z\
 	g++\
 	httpd\
+	openssh-server\
+	vim-enhanced\
+	
 
 echo "Base packages done"
 
