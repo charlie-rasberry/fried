@@ -1,0 +1,47 @@
+window#waybar {
+    font-family: "Bauhaus";
+    font-size: 14px;
+    color: #000831;
+    background-color: transparent;
+    background-image:
+        /* top indent line */
+        linear-gradient(#1e9a78, #1e9a78),
+        /* main fill with chamfer built in */
+        linear-gradient(255deg, transparent 8px, #2dbc94 8px),
+        /* bottom CD ridge */
+        repeating-linear-gradient(
+            90deg,
+            #0d0d0d,
+            #4a4a4a 1px,
+            #6a6a6a 2px,
+            #4a4a4a 3px,
+            #0d0d0d 4px
+        );
+    background-size:
+        calc(60% - 8px) 2px,
+        60% calc(100% - 5px),
+        60% 5px;
+    background-position:
+        top left,
+        top left,
+        bottom left;
+    background-repeat: no-repeat;
+    border: none;
+}
+/* Left-aligned modules */
+#sway-window {
+    margin-left: 10px;
+    padding-left: 8px;
+    color: #b5ffc2;
+}
+
+#sway-workspaces {
+    margin-left: 4px;
+    color: #000831;
+}
+
+/* Push clock to the far right of left 60% */
+#clock {
+    	color: #b5ffc2;
+}
+

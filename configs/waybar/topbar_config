@@ -1,0 +1,47 @@
+{
+    "position": "top",
+    "height": 22,        // smaller bar
+    "font": "Bauhaus 14",
+    "modules-left": ["custom/media-notify"],
+    "modules-center": [],
+    "modules-right": ["sway/workspaces", "cpu", "memory", "battery", "tray"],
+
+    "sway/workspaces": {
+        "format": "{name}",
+	"format-focused": "<span color='#b5ffc2' font-weight='bold'>{name}</span>",
+	"format-urgent": "<span color='#ff6699'>{name}</span>",
+	"persistent-workspaces": {
+		"1": [],
+		"2": [],
+		"3": [],
+		"4": [],
+		"5": [],
+		"6": [],
+		"7": []
+		}
+    },
+
+    "cpu": {
+        "format": "cpu->{usage}%",
+        "format-alt": "CPU Load: {usage}%"
+    },
+
+    "memory": {
+        "format": "ram->{used}GB",
+        "format-alt": "{used}GB used of {total}GB"
+    },
+
+    "battery": {
+        "format": "bat->{capacity}%"
+    },
+
+    "custom/media-notify": {
+        "exec": "~/.config/waybar/scripts/media-notify.sh",
+        "interval": 1,
+        "format": "{}",
+        "max-length": 100,
+        "on-click": "playerctl play-pause"
+    }
+	
+}
+

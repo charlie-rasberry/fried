@@ -1,0 +1,46 @@
+{
+    "position": "bottom",
+    "height": 28,
+    "font": "Bauhaus 11",
+    "modules-left": ["sway/window"],
+    "modules-center": ["clock"],
+
+    "sway/window": {
+        "format": "{title}",
+        "max-length": 100,
+        "all-outputs": false,
+        "offscreen-css": true,
+        "offscreen-css-text": "Hidden",
+        "rewrite": {
+            "": "arpeggio"
+        }
+    },
+
+    "clock": {
+    	"interval": 1,
+	"format": "{:%H:%M:%S}",
+	"format-alt": "{:%A, %B %d, %Y (%R)}",
+	"tooltip-format": "<tt><small>{calendar}</small></tt>",
+	"calendar": {
+		"mode"          : "month",
+		"mode-mon-col"  : 3,
+		"weeks-pos"     : "right",
+		"on-scroll"     : 1,
+		"on-click-right": "mode",
+		"format": {
+			"months":     "<span color='#2dbc94'><b>{}</b></span>",
+			"days":       "<span color='#a5ffc2'><b>{}</b></span>",
+			"weeks":      "<span color='#2dbc94'><b>W{}</b></span>",
+			"weekdays":   "<span color='#b5ffc4'><b>{}</b></span>",
+			"today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+		}
+	},
+	"actions": {
+		"on-click-right": "mode",
+		"on-scroll-up": "shift_up",
+		"on-scroll-down": "shift_down"
+	}
+	}
+
+}
+

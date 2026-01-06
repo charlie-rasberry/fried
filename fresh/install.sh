@@ -1,13 +1,9 @@
 #!/bin/bash
-
--set -euxo pipefail
+set -euxo pipefail
 
 echo "Installing, one moment."
-
-for script in base.sh system.sh packages.sh users.sh rice.sh; do
+for script in base.sh system.sh packages.sh users.sh rice.sh configs.sh; do
 	echo "Running $script"
-	./$(basename "$script")
+	./"$script"
 done
-
 echo "Completed, bootstrap successful"
-

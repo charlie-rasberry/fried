@@ -1,0 +1,35 @@
+include /etc/sway/config
+
+input type:keyboard
+	{
+	xkb_layout "gb"	
+	}
+
+output * bg /usr/share/backgrounds/fried/blueshift.jpg fill
+
+# ----------------- BORDERS ----------------
+gaps inner 3
+gaps outer 1
+default_border pixel 2
+hide_edge_borders smart
+default_border pixel 2
+client.focused          #2dbc94 #2dbc94 #000831 #b5ffc2   #2dbc94
+client.focused_inactive #1e9a78 #1e9a78 #000831 #1e9a78   #1e9a78
+client.unfocused        #0d0d0d #0d0d0d #707880 #0d0d0d   #0d0d0d
+client.urgent           #a54242 #a54242 #ffffff #a54242   #a54242
+
+# ------------- NOTIFICATIONS ------------------
+exec_always pkill -f notify-monitor.sh; ~/.config/waybar/scripts/notify-monitor.sh &
+
+
+# ------------- KEYBINDS ------------------
+
+set $mod Mod4 
+bindsym $mod+Shift+Return exec foot -e tmux
+bindsym $mod+Shift+p exec firefox --new-window 
+
+font pango:Bauhaus 11
+# ------------- MAIN BAR ------------------
+exec_always ~/.config/sway/start_bar.sh
+# ------------- TOP BAR ------------------
+exec_always ~/.config/sway/start_topbar.sh

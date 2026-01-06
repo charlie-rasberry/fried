@@ -1,0 +1,60 @@
+window#waybar {
+    font-family: "Bauhaus";
+    font-size: 14px;
+    color: #000831;
+    padding-right: 20px;
+    background-color: transparent;
+    background-image:
+        /* bottom indent line */
+        linear-gradient(#1e9a78, #1e9a78),
+        /* main fill with chamfer built in */
+        linear-gradient(75deg, transparent 8px, #2dbc94 8px);
+    background-size:
+        calc(40% - 8px) 2px,
+        40% calc(100% - 2px);
+    background-position:
+        bottom right,
+        top right;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+#workspaces {
+    margin-bottom: 2px;
+}
+
+#workspaces button {
+    margin: 0 2px;
+    padding: 0 4px;
+    background: #bfffe6;
+}
+
+#workspaces button.focused {
+    font-weight: bold;
+    background: #96bfe6;
+    padding: 0 4px;
+}
+
+#workspaces button.urgent {
+    font-weight: bold;
+    background: #c3a55c;
+    padding: 0 4px;
+}
+
+#cpu, #memory, #battery {
+    margin-left: 10px;
+    color: #000831;
+}
+
+#battery {
+	margin-right: 10px;	
+}
+
+
+#tray {
+    margin-left: 4px;
+}
+#custom-media-notify {
+    color: #b5ffc2;
+    padding-left: 20px;
+}

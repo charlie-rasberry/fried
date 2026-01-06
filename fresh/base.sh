@@ -17,6 +17,10 @@ sudo dnf -y install git\
 	man-db\
 	tree\
 	ranger\
+	unzip\
+	7z\
+	g++\
+	httpd\
 
 echo "Base packages done"
 
