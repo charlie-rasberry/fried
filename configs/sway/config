@@ -19,8 +19,8 @@ client.unfocused        #0d0d0d #0d0d0d #707880 #0d0d0d   #0d0d0d
 client.urgent           #a54242 #a54242 #ffffff #a54242   #a54242
 
 # ------------- NOTIFICATIONS ------------------
-exec_always pkill -f notify-monitor.sh; ~/.config/waybar/scripts/notify-monitor.sh &
-
+# exec_always pkill -f notify-monitor.sh; ~/.config/waybar/scripts/notify-monitor.sh &
+exec ~/.config/waybar/scripts/notify-monitor.sh
 
 # ------------- KEYBINDS ------------------
 
@@ -29,6 +29,10 @@ bindsym $mod+Shift+Return exec foot -e tmux
 bindsym $mod+Shift+p exec firefox --new-window 
 
 font pango:Bauhaus 11
+
+# ------------- STARTUP -------------------
+exec audacious
+exec thunderbird
 # ------------- MAIN BAR ------------------
 exec_always ~/.config/sway/start_bar.sh
 # ------------- TOP BAR ------------------

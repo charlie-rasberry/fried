@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NOTIFY_FILE="/tmp/waybar-notify"
-SCROLL_WIDTH=50
+SCROLL_WIDTH=100
 SCROLL_PAUSE=3
 SCROLL_SPEED=2
 

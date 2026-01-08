@@ -4,7 +4,7 @@
     "font": "Bauhaus 14",
     "modules-left": ["custom/media-notify"],
     "modules-center": [],
-    "modules-right": ["sway/workspaces", "cpu", "memory", "battery", "tray"],
+    "modules-right": ["tray","sway/workspaces", "cpu", "memory", "battery"],
 
     "sway/workspaces": {
         "format": "{name}",
@@ -39,7 +39,7 @@
         "exec": "~/.config/waybar/scripts/media-notify.sh",
         "interval": 1,
         "format": "{}",
-        "max-length": 100,
+        "max-length": 200,
         "on-click": "playerctl play-pause"
     }
 	

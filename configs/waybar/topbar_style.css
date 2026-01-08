@@ -52,7 +52,7 @@ window#waybar {
 
 
 #tray {
-    margin-left: 4px;
+    margin-right: 80px;
 }
 #custom-media-notify {
     color: #b5ffc2;
